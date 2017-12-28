@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jedisebas.poleiobjetosc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PolaActivity"
+            android:label="@string/title_activity_pola"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ObjetoscActivity"
+            android:label="@string/title_activity_objetosc"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TrojkatActivity"
+            android:label="@string/title_activity_trojkat"
+            android:parentActivityName=".PolaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.PolaActivity" />
+        </activity>
+        <activity
+            android:name=".KwadratActivity"
+            android:label="@string/title_activity_kwadrat"
+            android:parentActivityName=".PolaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.PolaActivity" />
+        </activity>
+        <activity
+            android:name=".ProstokatActivity"
+            android:label="@string/title_activity_prostokat"
+            android:parentActivityName=".PolaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.PolaActivity" />
+        </activity>
+        <activity
+            android:name=".RombActivity"
+            android:label="@string/title_activity_romb"
+            android:parentActivityName=".PolaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.PolaActivity" />
+        </activity>
+        <activity
+            android:name=".RownoleglobokActivity"
+            android:label="@string/title_activity_rownoleglobok"
+            android:parentActivityName=".PolaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.PolaActivity" />
+        </activity>
+        <activity
+            android:name=".TrapezActivity"
+            android:label="@string/title_activity_trapez"
+            android:parentActivityName=".PolaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.PolaActivity" />
+        </activity>
+        <activity
+            android:name=".SzescianActivity"
+            android:label="@string/title_activity_szescian"
+            android:parentActivityName=".ObjetoscActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.ObjetoscActivity" />
+        </activity>
+        <activity
+            android:name=".ProstopadloscianActivity"
+            android:label="@string/title_activity_prostopadloscian"
+            android:parentActivityName=".ObjetoscActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.ObjetoscActivity" />
+        </activity>
+        <activity
+            android:name=".GraniastoslupActivity"
+            android:label="@string/title_activity_graniastoslup"
+            android:parentActivityName=".ObjetoscActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jedisebas.poleiobjetosc.ObjetoscActivity" />
+        </activity>
+    </application>
+
+</manifest>

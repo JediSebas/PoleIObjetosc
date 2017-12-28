@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jedisebas.poleiobjetosc.ProstokatActivity"
+    tools:showIn="@layout/activity_prostokat">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/długośća"
+        android:id="@+id/dlugoscaP"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dlugoscaPp"
+        android:layout_alignBottom="@+id/dlugoscaP"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/dlugoscaP"
+        android:layout_alignLeft="@+id/szerokoscbPp"
+        android:layout_alignStart="@+id/szerokoscbPp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/szerokoscb"
+        android:id="@+id/szerokoscbP"
+        android:layout_below="@+id/dlugoscaP"
+        android:layout_alignLeft="@+id/dlugoscaP"
+        android:layout_alignStart="@+id/dlugoscaP"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/szerokoscbPp"
+        android:layout_alignBottom="@+id/szerokoscbP"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/szerokoscbP"
+        android:layout_toEndOf="@+id/szerokoscbP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oblicz"
+        android:id="@+id/obliczP"
+        android:layout_below="@+id/szerokoscbP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/wynik"
+        android:id="@+id/wynik"
+        android:layout_below="@+id/obliczP"
+        android:layout_alignLeft="@+id/szerokoscbP"
+        android:layout_alignStart="@+id/szerokoscbP"
+        android:layout_marginTop="93dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wynikP"
+        android:layout_alignBottom="@+id/wynik"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/szerokoscbPp"
+        android:layout_alignStart="@+id/szerokoscbPp" />
+</RelativeLayout>

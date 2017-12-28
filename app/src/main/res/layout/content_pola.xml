@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jedisebas.poleiobjetosc.PolaActivity"
+    tools:showIn="@layout/activity_pola">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TRÓJKĄT"
+        android:id="@+id/trojkatBtn"
+        android:onClick="click"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/KWADRAT"
+        android:id="@+id/kwadratBtn"
+        android:onClick="click"
+        android:layout_below="@+id/trojkatBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PROSTOKĄT"
+        android:id="@+id/prostokatBtn"
+        android:onClick="click"
+        android:layout_below="@+id/kwadratBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ROMB"
+        android:id="@+id/rombBtn"
+        android:onClick="click"
+        android:layout_below="@+id/prostokatBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/RÓWNOLEGŁOBOK"
+        android:id="@+id/rownoleglobokBtn"
+        android:onClick="click"
+        android:layout_below="@+id/rombBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TRAPEZ"
+        android:id="@+id/trapezBtn"
+        android:onClick="click"
+        android:layout_below="@+id/rownoleglobokBtn"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

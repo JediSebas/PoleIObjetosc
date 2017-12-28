@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jedisebas.poleiobjetosc.TrapezActivity"
+    tools:showIn="@layout/activity_trapez">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/podstawab"
+        android:id="@+id/podstawabTra"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/podstawaaTra"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/wysokośćh"
+        android:id="@+id/wysokoschTra"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/podstawabTra"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/podstawaa"
+        android:id="@+id/podstawaaTra"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oblicz"
+        android:id="@+id/obliczTra"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/wynik"
+        android:id="@+id/wynikTra"
+        android:layout_below="@+id/obliczTra"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/podstawaaTrap"
+        android:layout_above="@+id/podstawabTra"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/obliczTra"
+        android:layout_alignStart="@+id/obliczTra" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/podstawabTrap"
+        android:layout_above="@+id/wysokoschTra"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/podstawaaTrap"
+        android:layout_alignStart="@+id/podstawaaTrap" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wysokoschTrap"
+        android:layout_alignBottom="@+id/wysokoschTra"
+        android:layout_alignRight="@+id/podstawabTrap"
+        android:layout_alignEnd="@+id/podstawabTrap"
+        android:layout_alignLeft="@+id/obliczTra"
+        android:layout_alignStart="@+id/obliczTra" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wynikTrap"
+        android:layout_alignBottom="@+id/wynikTra"
+        android:layout_alignRight="@+id/wysokoschTrap"
+        android:layout_alignEnd="@+id/wysokoschTrap"
+        android:layout_alignLeft="@+id/obliczTra"
+        android:layout_alignStart="@+id/obliczTra" />
+
+</RelativeLayout>
